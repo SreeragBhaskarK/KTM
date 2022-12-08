@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 @font-face {
     font-family: "BlenderPro-Bold";
     src: url(font/BlenderPro-Bold.woff) format('woff');
@@ -16,25 +20,87 @@
 
 }
 
-.header-img-1 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.container {
+    max-width: 768px;
+}
 
+.header-first {
+    width: 100%;
+    margin: 0;
+}
+
+
+.nav-head-text {
+    text-transform: uppercase;
+    font-size: 17.77776px;
+    font-weight: 600;
+}
+
+.header-img-1 {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.hf-hide {
+    display: none;
+}
+
+.ktm-logo-header {
+
+    height: 73px;
+}
+
+.header-center {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    top: 0;
+}
+
+.header-center-1 {
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+
+
+}
+
+.header-center-2 {
+    width: fit-content;
+    margin: auto;
+}
+
+.h-c-2 {
+    margin-bottom: 0.25em;
+    color: inherit;
+    text-transform: uppercase;
+    font: 700 18px/1.22 BlenderPro-Medium;
+}
+
+.header-footer-list {
+    float: right;
+
+    margin: 0;
+    padding: 0;
 }
 
 .header-main-top {
-    display: flex;
+
     position: absolute;
 }
 
-.header-footer {}
+.header-footer {
+    margin-left: auto;
+}
 
 .header-img {
-
     width: 100%;
     height: 100%;
-    position: relative;
+    padding: 0;
 }
 
 .header-right-logo {
@@ -43,7 +109,59 @@
     position: relative;
 }
 
+.header-top-button {
+    height: 75px;
 
+    width: fit-content;
+    border: 1px solid;
+    border-color: #f60;
+    padding: 22px 50px;
+    background-color: #f60;
+    margin:auto;
+
+
+
+}
+
+.htb-1 {
+    text-decoration: none;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+
+.header-top-button1 {
+    height: 75px;
+
+    width: fit-content;
+    border: 1px solid;
+    border-color: #f60;
+    padding: 22px 50px;
+    background-color: #f60;
+    margin: auto;
+    margin-top: 1.2em;
+}
+
+.header-top-button:hover {
+    background: none;
+    color: #f60;
+
+}
+
+.header-top-button1:hover {
+    background: none;
+    color: #f60;
+
+}
+
+.h-t-button {
+   
+    width: fit-content;
+    margin: auto;
+}
 
 .main-head-text {
     text-align: center;
@@ -141,7 +259,7 @@
     overflow: hidden;
 }
 
-.m-h-header-text-color:hover{
+.m-h-header-text-color:hover {
     color: #ff4000;
 }
 
@@ -171,6 +289,12 @@
 .main-footer01 {
     width: 100%;
     height: 585px;
+    justify-content: center;
+    display: flex;
+}
+
+.m-f-012 {
+    margin: auto;
 }
 
 .main-footer02 {
@@ -183,20 +307,40 @@
 
 
 
-.footer-head {}
+.footer-head {
+    padding: 88px 0 0 0;
+
+}
 
 .footer-list {
     list-style-type: none;
-
-
-
+    padding: 0;
+    margin-top: 15px;
+    font: 300 18px/1.625 trade-gothic-condensed;
 
 }
 
 
+
+
+.footer-header {
+    font: 700 25px/1 BlenderPro-Medium;
+    text-transform: uppercase;
+
+}
+
+
+
+.footer-header-mobile {
+    display: flex;
+}
+
+.fhm {
+    margin-left: auto;
+}
+
 .footer-link {
     text-decoration: none;
-
     color: inherit
 }
 
@@ -210,13 +354,18 @@
 .footer-end-list {
     display: flex;
     list-style-type: none;
+    padding: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin: auto;
+    width: fit-content;
 
 }
 
 .brn-mf {
     color: #ff4000;
     border: 1px solid #ff4000;
-    
+
 }
 
 .brn-mf:hover {
@@ -228,7 +377,7 @@
     color: white;
 }
 
-.brn-main-top{
+.brn-main-top {
     width: fit-content;
     margin: auto;
 }
@@ -241,7 +390,7 @@
 
 }
 
-.main-footer-end{
+.main-footer-end {
     padding: 38px;
     text-align: center;
     font-weight: 300;
@@ -249,8 +398,80 @@
     color: #bdbdbd;
 }
 
+.f-e-l {
+    padding: 25px 5px 0 0;
+}
+
+.f-e-l-img {
+    height: 25px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.footer-ended {
+    padding: 40px 0;
+    margin: auto;
+    width: fit-content;
+
+}
+
+.footer-ended-favicon {
+    margin-left: 13px;
+    fill: white;
+    width: 20px;
+    width: 20px;
+}
+
+.fed-text {
+    font: 300 12px trade-gothic-condensed;
+    color: #bdbdbd;
+}
+
+.fed-text1 {
+    
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #f60;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: BlenderPro-Medium;
+    width: fit-content;
+    margin: auto;
+}
+
+.footer-head-mobile {
+    padding: 68px 48px 40px;
+}
+
+.footer-head-01 {
+
+    text-align: center;
+}
+
+.footer.head {
+    martgin-bottom: 30px;
+}
+
+.h-c-3 {
+    font: 800 40px/1 BlenderPro-Medium;
+    text-transform: uppercase;
+    margin-bottom: 0.25em;
+}
+
+.h-c-4{
+    margin: auto;
+    width: fit-content;
+}
 
 @media (min-width:768px) {
+
+
+    .h-c-3 {
+        font: 800 85px/1 BlenderPro-Medium;
+    }
+    .container {
+        max-width: 992px;
+    }
 
     .main-head-text {
 
@@ -298,11 +519,50 @@
         margin-right: 16px;
     }
 
+    .ktm-logo-header {
 
+        height: 115px;
+    }
+
+    .h-c-2 {
+        font: 700 24px/1.08 BlenderPro-Medium;
+    }
+
+    .h-t-button{
+        display: flex;
+    }
+
+    .header-top-button{
+        margin-right: 28px;
+    }
+
+    .header-top-button1{
+        margin-left: 14.400px;
+        margin-top: 0;
+    }
 }
 
 
 @media(min-width:992px) {
+
+    .hf-hide {
+        display: none;
+    }
+
+    .nav-head-text {
+
+        font-size: 9.77776px;
+        font-weight: 800;
+    }
+
+    .ktm-logo-header {
+
+        height: 145px;
+    }
+
+    .container {
+        max-width: 1200px;
+    }
 
     .main-head-text {
 
@@ -313,6 +573,9 @@
 
     }
 
+    .hf-hide {
+        display: contents;
+    }
 
     .mtb {
         text-align: right;
@@ -339,13 +602,50 @@
     }
 
 
+    .footer-head-01 {
+
+        text-align: inherit;
+    }
 
 
+    .footer.head {
+        martgin-bottom: 0;
+    }
+
+    .footer-end-list {
+        width: auto;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .footer-ended{
+        display: flex;
+        width: unset;
+    }
+
+    .fed-text1{
+        margin-left: auto;
+        margin-right: unset;
+        margin-top: unset;
+        margin-bottom: unset;
+        
+    }
 
 }
 
 
 @media(min-width:1200px) {
+
+    .nav-head-text {
+        font-size: 13.77776px;
+        font-weight: 800;
+
+    }
+
+
+    .container {
+        max-width: 1640px;
+    }
 
     .main-top-text {
         margin-bottom: 80px;
@@ -357,5 +657,18 @@
         margin-bottom: 80px;
 
     }
+
+}
+
+@media(min-width:1440px) {
+
+    .nav-head-text {
+        font-size: 17.77776px;
+        font-weight: 800;
+
+    }
+
+
+
 
 }
