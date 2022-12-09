@@ -272,7 +272,9 @@ z-index: 1;
 }
 
 .main-footer-012 {
-    margin-bottom: 60px;
+   
+    padding: 0;
+    margin: 0 0 60px 0;
 }
 
 .main-footer-img1 {
@@ -464,8 +466,22 @@ z-index: 1;
     width: fit-content;
 }
 
+.hfl-favicon{
+    display: none;
+}
+
+.hfl-favicon1{
+    display: inline;
+}
+
 @media (min-width:768px) {
 
+    .hfl-favicon1{
+        display: none
+    }
+    .hfl-favicon{
+        display: inline;
+    }
 
     .h-c-3 {
         font: 800 85px/1 BlenderPro-Medium;
