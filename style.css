@@ -474,6 +474,22 @@ z-index: 1;
     display: inline;
 }
 
+.insta-btn{
+    padding: 1.35em 2.778em 1.05em;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: white;
+    fill: white;
+}
+
+.insta-btn:hover{
+    border-color: #f60;
+    color: #f60;
+    fill: #f60;
+}
+
+
+
 @media (min-width:768px) {
 
     .hfl-favicon1{
